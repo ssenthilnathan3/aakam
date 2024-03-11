@@ -313,7 +313,32 @@ footer .footer-logo img {
   }
 
   .btn.btn-primary1 {
+    position: absolute;
     background: #FFAD2A;
     color: #fff;
-    left: 50%;
+    white-space: nowrap;
+    width: 150px;
+    left: 20%;
+    top: 70%;
    }  
+
+   @media (max-width: 767px) {
+    /* Mobile phones */
+    .btn.btn-primary1 {
+        width: 90%;
+        height: 20%;
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* iPads */
+    .btn.btn-primary1 {
+        width: 150px; /* Adjust as needed for iPads */
+        left: 20%;
+        top: 70%;
+    }
+}
